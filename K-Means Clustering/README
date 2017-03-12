@@ -1,0 +1,15 @@
+1. Download our mapper, reducer, 'kMeansBash.sh' and the input files from the blackboard. Place them in your local path: "/home/cloudera/"
+
+2. The script 'kMeansBash.sh' contains all the necessary commands to execute the K-Means MapReducer in the hadoop file system.
+
+3. Give appropriate executing permisions for yourself:
+	chmod 775 /home/cloudera/kMeansBash.sh
+
+4. Follow this syntax to execute the bash script: "/home/cloudera/kMeansBash.sh <max Iterations> <number of clusters>"
+   For example: " /home/cloudera/kMeansBash.sh 10 4"
+
+5. After the commands are executed, output will be generated in the following path on the hadoop file system: '/user/cloudera/output_KMeans'
+
+6. The bash script will also copy this output folder to your local folder.
+
+7. Inside the '/home/cloudera/output_KMeans/' folder, we can find the result file as 'part-00000'.
